@@ -60,6 +60,15 @@
             return 1;
         }
 
+        public function delPelicula($id){
+            $query = $this->con->getQuery("DELETE FROM pelicula WHERE peliculaId='$id'");
+            if(!$query){
+                die("Error, no se puede eliminar la pelicula seleccionada ".$this->con->error);
+            }
+
+            return 1;
+        }
+
         
     }
 ?>

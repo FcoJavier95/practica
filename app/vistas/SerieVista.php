@@ -21,9 +21,9 @@
                     <a href="editarPeli.php?id=<?= $serie['peliculaId'] ?>" class="btn btn-outline-info btn-sm">
                         <i class="fa fa-edit"></i>
                     </a>
-                    <button type="button" class="btn btn-outline-success btn-sm">
-                        <i class="fa-brands fa-spotify"></i>
-                    </button>
+                    <a onclick="del(<?= $serie['peliculaId'] ?>)" class="btn btn-outline-danger btn-sm">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
                 </td>
             </tr>
             </tr>
@@ -33,3 +33,22 @@
 <div class="alert alert-secondary" role="alert">
   A simple secondary alert—check it out!
 </div>
+
+<script>
+    function del(id){
+        Swal.fire({
+            title: '¿Eliminar?',
+            text: "Lo datos no se pueden recuperar despues de eliminados!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'SI, eliminar!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href=`editarPeli.php?id=${id}&del=1`;
+            }
+        })
+    }
+    
+</script>
