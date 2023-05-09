@@ -9,7 +9,7 @@
         {
             //$this->con = "HOLA";
             //$this->con
-            $this->con  = new mysqli('localhost','root','','db_peliculas');
+            $this->con  = new mysqli('localhost','root','root','db_pelicula');
         }
 
         public function getConexion(){

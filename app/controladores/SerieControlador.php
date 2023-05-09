@@ -4,5 +4,4 @@
 
     require_once dirname(__FILE__).'/../vistas/SerieVista.php';
     //$series = $serie->getPelicula();
-
 ?>
