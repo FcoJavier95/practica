@@ -29,7 +29,13 @@
         <span class="input-group-text" id="basic-addon2">
             <i class="fa fa-plus"></i>
         </span>
-        <input type="number" id="n2" name="n2" class="form-control" placeholder="Ingrese el segundo número" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="number" id="n2" name="n2" class="form-control" placeholder="Ingrese el segundo número" aria-label="Recipient's username" aria-describedby="basic-addon2"  onchange="operacion();">
+    </div>
+
+    <div class="input-group mb-3">
+        <button type="button" class="btn btn-primary" id="btnSuma" name="btnSuma" value="Guardar" onclick="operacion();" ondblclick="dobleCLick();">
+            <i class="fa fa-plus"></i> Sumar
+        </button>
     </div>
 
     <label for="">Resultado</label>
@@ -40,11 +46,12 @@
         <input type="number" id="resultado" name="resultado" class="form-control" placeholder="Acá se mostrará el resultado" aria-label="Recipient's username" aria-describedby="basic-addon2">
     </div>
 
-    <div class="input-group mb-3">
+    <!-- <div class="input-group mb-3">
         <button type="submit" class="btn btn-primary" id="btnAdd" name="btnAdd" value="Guardar" disabled>
             <i class="fa fa-plus"></i> Agregar
         </button>
-    </div>
+    </div> -->
 </form>
 
 <script src="../public/js/addPelicula.js"></script>
+<script src="../public/js/ejercicio.js"></script>
