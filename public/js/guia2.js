@@ -55,7 +55,7 @@ x += y;
 /* console.log(x - y); // imprime 5
 console.log(x * y); // imprime 50
 console.log(x / y); // imprime 2
-console.log(x % y); // imprime 0  */
+console.log(x % y); // imprime 0 */
 
 
 if (edad >= 18) {
