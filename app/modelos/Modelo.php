@@ -7,6 +7,7 @@
        {
            $this->conexion = new Conexion();
            $this->conexion->getConexion();
+           
        }
 
        public function cerrarConexion()
