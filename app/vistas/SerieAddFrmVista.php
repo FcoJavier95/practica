@@ -46,6 +46,9 @@
         <input type="number" id="resultado" name="resultado" class="form-control" placeholder="Acá se mostrará el resultado" aria-label="Recipient's username" aria-describedby="basic-addon2">
     </div>
 
+    <input type="text" id="titulo">
+    <img src="" alt="" id="imagenNasa" width="50%" >
+
     <!-- <div class="input-group mb-3">
         <button type="submit" class="btn btn-primary" id="btnAdd" name="btnAdd" value="Guardar" disabled>
             <i class="fa fa-plus"></i> Agregar
@@ -55,3 +58,4 @@
 
 <script src="../public/js/addPelicula.js"></script>
 <script src="../public/js/ejercicio.js"></script>
+<script src="../public/js/nasa.js"></script>
